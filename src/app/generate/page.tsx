@@ -242,9 +242,7 @@ export default function GeneratePage() {
                     key={t.value}
                     onClick={() => setTimePerSession(t.value)}
                     className={`card text-center text-sm transition cursor-pointer ${
-                      timePerSession === t.value
-                        ? "border-[#10b981] bg-[#10b981]/10"
-                        : ""
+                      timePerSession === t.value ? "selected" : ""
                     }`}
                   >
                     {t.label}
@@ -261,9 +259,7 @@ export default function GeneratePage() {
                     key={d.value}
                     onClick={() => setDaysPerWeek(d.value)}
                     className={`card flex-1 text-center text-sm transition cursor-pointer ${
-                      daysPerWeek === d.value
-                        ? "border-[#10b981] bg-[#10b981]/10"
-                        : ""
+                      daysPerWeek === d.value ? "selected" : ""
                     }`}
                   >
                     {d.value}
