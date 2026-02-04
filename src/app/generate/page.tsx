@@ -180,10 +180,8 @@ export default function GeneratePage() {
                 <button
                   key={s.id}
                   onClick={() => toggleWeakness(s.id)}
-                  className={`card text-left transition hover:border-[#10b981]/40 cursor-pointer ${
-                    weaknesses.includes(s.id)
-                      ? "border-[#10b981] bg-[#10b981]/10"
-                      : ""
+                  className={`card text-left cursor-pointer ${
+                    weaknesses.includes(s.id) ? "selected" : ""
                   }`}
                 >
                   <span className="text-xl mr-2">{s.icon}</span>
@@ -199,10 +197,8 @@ export default function GeneratePage() {
                   <button
                     key={g.id}
                     onClick={() => setGoal(g.id)}
-                    className={`card text-left text-sm transition cursor-pointer ${
-                      goal === g.id
-                        ? "border-[#f59e0b] bg-[#f59e0b]/10"
-                        : ""
+                    className={`card text-left text-sm cursor-pointer ${
+                      goal === g.id ? "selected-accent" : ""
                     }`}
                   >
                     {g.label}

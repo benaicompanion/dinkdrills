@@ -30,6 +30,21 @@ body {
   padding: 1rem;
   position: relative;
   z-index: 1;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.card.selected {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.card.selected-accent {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
 }
 
 .btn-primary {
